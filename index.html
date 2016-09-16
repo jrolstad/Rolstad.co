@@ -36,8 +36,6 @@
 		{
 		    margin:15%;
 		    margin-top:10%;
-		    min-width:900px;
-			width:100%;
 		}
 		.header 
 		{
@@ -57,32 +55,7 @@
 	        float:right;
 	    }
 	</style>
-	<!-- Javascript -->
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-
-        // When the page loads...
-	    $(function () {
-            // Show all the fadeable elements
-	        var elements = $(".fadeable");
-	        elements.sort(function () { return 0.5 - Math.random() });
-            showItem(0,elements);
-	        
-
-	    });
-
-        // When showing a fadeable elements...
-        function showItem(position, elements) {
-            // Get the thing to show
-            var item = elements[position];
-            // If its found, then show it and queue up the next one
-	        if (item != null) {
-	            $(item).fadeIn("slow", function () {
-	                showItem(position + 1, elements);
-	            });
-	        }
-	    }
-	</script>
+	
 </head>
 <body>
     <div class="header">
@@ -91,11 +64,10 @@
     </div>
 
 	<div class="links">
-		<a class="title" href="http://assertthat.blogspot.com" target="new" >SOFTWARE BLOG |</a><br/>
-	    <a class="title" href="http://dailyrolstad.blogspot.com" target="new" >PERSONAL BLOG |</a><br/>
-	    <a class="title" href="http://twitter.com/jrolstad"  target="new" >@JROLSTAD |</a>
-	    <a class="title" href="http://www.linkedin.com/in/rolstad" target="new">RESUME |</a><br/>
-	    <a class="title" href="http://github.com/jrolstad" target="new">CODE |</a>
+		<a class="title" href="https://medium.com/@jrolstad" target="new" >BLOG |</a>
+	    <a class="title" href="http://twitter.com/jrolstad"  target="new" >@JROLSTAD |</a><br/>
+	    <a class="title" href="http://www.linkedin.com/in/rolstad" target="new">RESUME |</a>
+	    <a class="title" href="http://github.com/jrolstad" target="new">CODE |</a><br/>
 	    <a class="title" href="mailto:jrolstad@gmail.com">CONTACT</a>
 	</div>
 </body>
